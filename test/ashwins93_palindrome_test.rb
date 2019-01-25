@@ -18,16 +18,14 @@ class Ashwins93PalindromeTest < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    assert "RaceCar".palindrome? 
+    assert "RaceCar".palindrome?
   end
 
   def test_letters
-    assert "MadamImAdam", "Madam, I'm Adam.".letters
+    assert_equal "MadamImAdam", "Madam I'm Adam.".letters
   end
 
-=begin
   def test_palindrome_with_punctuation
     assert "Madam, I'm Adam.".palindrome?
-  end 
-=end
+  end
 end

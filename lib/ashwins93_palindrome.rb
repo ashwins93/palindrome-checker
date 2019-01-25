@@ -6,12 +6,12 @@ class String
   end
 
   def letters
-
+    self.scan(/[a-z]/i).join("")
   end
-  
+
   private
 
   def processed_content
-    self.downcase
+    self.letters.downcase
   end
 end
